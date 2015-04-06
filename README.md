@@ -41,7 +41,7 @@ MIN:
 MAX:
 
 Defines maximum characters allowed for input field
-ex:max="8"
+ex:max="8" 
 
 MSG:
 
