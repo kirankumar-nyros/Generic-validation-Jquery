@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Generic Validations</title>
+      <link rel="stylesheet" type="text/css" href="css/main.css">
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+      <script type="text/javascript" src="js/jquery.min.js"></script>  
+      <script type="text/javascript" src="js/validations.js"></script>  
+  </head>
+<body>
+   <form name="application" novalidate onSubmit="return GenericValidation(this)" method="post" >
+    <fieldset>
+      <h1>IT Software Solutions</h1><br>
+          <b> Register Now for New Batches</b>
+            <img src="images/logo-medium.png">
+          <p>
+              <label for="name">Name *</label><br><br>
+              <input type="text" name="name" id="name" size="40" min="5" max="20"/>
+          </p>
+          <p>
+              <label for="name">Email *</label><br><br>
+              <input type="email" name="email" id="email" size="40" required="true" />
+          </p>
+          <p>
+              <label for="name">Password *</label><br><br>
+              <input type="password" name="password" id="password"  size="40" />
+          </p>
+          <p>
+              <label for="name">Confirm password *</label><br><br>
+              <input type="password" name="confirm"  id="confirm" size="40"/>
+          </p>
+          <p>
+              <label for="name">Mobile Number *</label><br><br>
+              <input type="number" name="mobilenumber"  id="mobilenumber" size="90"/>
+          </p>
+          <p>
+              <label>Select Course*</label><br><br>
+                <select>
+                  <optgroup>
+                      <option value="">None</option>
+                      <option value="C-Language">C-Language</option>
+                      <option value="Java">Java</option>
+                      <option value="MS.NET">MS.NET</option>
+                      <option value="PHP">PHP</option>
+                      <option value="MS SQL 2012">MS SQL 2012</option>
+                      <option value="PL/SQL">PL/SQL</option>
+                      <option value="Oracle">Oracle</option>
+                      <option value="HTML5/CSS3">HTML5/CSS3</option>
+                      <option value="HADOOP">HADOOP</option>
+                      <option value="Android">Android</option>
+                  <optgroup>
+            </select>
+        </p>
+        <p>
+          <label>Payment Mode*</label><br><br>
+          <input type="radio" name="course" id="course" />Bank A/C
+          <input type="radio" name="course" id="course"/>Online
+          <input type="radio" name="course" id="course"/>At Office
+      </p>
+      <p>
+        <label>Course type*</label><br><br>
+         <input type="checkbox" name="course" id="course"/>Fastrack
+         <input type="checkbox" name="course" id="course"/>Medium 
+         <input type="checkbox" name="course" id="course"/>Normal
+      </p><br><br>
+      <p>
+        <input type="submit" name="submit" id="sumbit" value="Sign Up">
+      </p>
+    </fieldset>
+  </form>
+</body>
+</html>
